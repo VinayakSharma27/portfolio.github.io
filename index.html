@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Software Developer Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Helvetica", Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #000000;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+      background-color: #333;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      flex-basis: calc(50% - 15px);
+      margin-right: 15px;
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .profile h1 {
+      margin-bottom: 10px;
+    }
+
+    .profile p {
+      color: #ccc;
+      margin-bottom: 5px;
+    }
+
+    .badges {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .badge {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .project {
+      flex-basis: calc(50% - 15px);
+      margin-bottom: 30px;
+      padding: 20px;
+    }
+
+    .project h2 {
+      margin-top: 0;
+    }
+
+    .project p {
+      margin-bottom: 10px;
+    }
+
+    .project img {
+      width: 30%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 6px;
+    }
+
+    .about-me {
+      background-color: #333;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-me h2 {
+      margin-bottom: 10px;
+    }
+
+    .about-me p {
+      color: #ccc;
+      margin-bottom: 10px;
+    }
+
+    .social-media {
+      margin-top: 30px;
+    }
+
+    .social-media h2 {
+      margin-bottom: 10px;
+    }
+
+    .social-media a {
+      display: inline-block;
+      color: yellow;
+      font-size: 24px;
+      margin-right: 10px;
+      text-decoration: none;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .social-media a:hover {
+      color: #ccc;
+    }
+
+    /* New styles for dark mode */
+    .container {
+      background-color: #000;
+    }
+
+    .profile {
+      background-color: #111;
+    }
+
+    .projects {
+      justify-content: space-between;
+    }
+
+    .project {
+      background-color: #111;
+    }
+
+    .about-me {
+      background-color: #111;
+    }
+
+    @media (max-width: 768px) {
+      .profile {
+        flex-basis: 100%;
+        margin-right: 0;
+      }
+
+      .project {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="profile-container">
+      <div class="profile profile1">
+        <img
+          src="https://media.licdn.com/dms/image/C4D03AQG1yOG06YD45Q/profile-displayphoto-shrink_200_200/0/1649301986695?e=1692230400&v=beta&t=1XWvYc3QRCDdcT7ak8GnjFvKjADnik-eurkvGSx7Xuc"
+          alt="Profile 1">
+        <h1>Vinayak Sharma</h1>
+        <p><i class="fas fa-map-marker-alt icon">&nbsp;&nbsp;</i>Location: <a
+            href="https://www.google.com/maps/place/Dehradun,+Uttarakhand/" style="color: yellow;">Dehradun,
+            Uttarakhand</a></p>
+        <p><i class="fas fa-envelope icon">&nbsp;&nbsp;</i>Email: <a href="mailto:example@example.com"
+            style="color: yellow;">vinayaksharmamail@gmail.com</a></p>
+        <p><i class="fas fa-phone icon">&nbsp;&nbsp;</i>Phone: <a href="tel:+123456789" style="color: yellow;">+91
+            9068331444</a>
+        </p>
+      </div>
+      <div class="profile profile2">
+        <img
+          src="https://images.prismic.io/keepit/033d5196-deaa-4a2c-8fa5-3c598797d351_why-backup-salesforce.png?auto=compress,format&rect=0,0,1200,1200&w=900&h=900"
+          alt="Profile 2">
+        <br />
+        <div class="badges">
+          <div class="badge">
+            <img src="https://drive.google.com/uc?export=view&id=1EVHWae7-hWU6nIzeAznih69h_VZ-oySR" alt="Badge 1">
+          </div>
+          <div class="badge">
+            <img src="https://drive.google.com/uc?export=view&id=1k1FWfMuh6dGL1JyttL3GK3zEB6MsO14Y" alt="Badge 2">
+          </div>
+        </div>
+        <div class="social-media">
+          <a href="https://twitter.com/example" target="_blank" style="color: yellow;"><i
+              class="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com/in/example" target="_blank" style="color: yellow;"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/example" target="_blank" style="color: yellow;"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="projects">
+      <div class="project">
+        <h2>Piramal Realty - SF Service</h2>
+        <p>Technologies used: SF Platform.</p>
+        <img
+          src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.piramal.com/wp-content/uploads/2023/06/new_pel_logo.png"
+          alt="Project 1">
+      </div>
+      <div class="project">
+        <h2>Piramal Realty - SF Development</h2>
+        <p>Technologies used: Apex, LWC & SFDC.</p>
+        <img
+          src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.piramal.com/wp-content/uploads/2023/06/new_pel_logo.png"
+          alt="Project 2">
+      </div>
+    </div>
+    <div class="about-me">
+      <h2>About Me</h2>
+      <p>2X Certified Salesforce Developer with 1 year + professional experience in Salesforce
+        Implementation/Development/Support.</p>
+      <p>Helping SaaS-based companies in their endeavor to be fully Cloud Native.</p>
+    </div>
+  </div>
+</body>
+
+</html>
